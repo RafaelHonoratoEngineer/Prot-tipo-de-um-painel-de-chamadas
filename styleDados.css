@@ -16,6 +16,22 @@ body {
     height: 100vh;
 }
 
+.logoHUJM {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.logoUFMT {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 200px;
+    height: auto;
+}
+
 .box {
     background-color: #ffffff;
     border-radius: 12px;

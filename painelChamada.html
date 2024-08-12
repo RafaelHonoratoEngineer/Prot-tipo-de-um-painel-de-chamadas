@@ -26,6 +26,10 @@
                         <span class="label">Ambulatório:</span>
                         <span class="valor ambulatorio"></span>
                     </div>
+                    <div class="campo">
+                        <span class="label">Especialidade:</span>
+                        <span class="valor especialidade"></span>
+                    </div>
                     <div class="campo urgencia">
                         <span class="label">Urgência:</span>
                         <span class="valor urgencia"></span>
@@ -38,11 +42,13 @@
         const nome = localStorage.getItem('nome');
         const senha = localStorage.getItem('senha');
         const ambulatorio = localStorage.getItem('ambulatorio');
+        const especialidade = localStorage.getItem('especialidade');
         const urgencia = localStorage.getItem('urgencia');
 
         document.querySelector('.valor.nome').innerText = nome;
         document.querySelector('.valor.senha').innerText = senha;
         document.querySelector('.valor.ambulatorio').innerText = ambulatorio;
+        document.querySelector('.valor.especialidade').innerText = especialidade;
         document.querySelector('.valor.urgencia').innerText = urgencia;
 
     </script>
