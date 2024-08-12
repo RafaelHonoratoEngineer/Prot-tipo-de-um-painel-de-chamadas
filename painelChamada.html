@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Chamadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dados">
+        <img src="HUJM (1).png" alt="Logo HUJM" class="logoHUJM">
+        <img src="UFMT.png" alt="Logo HUJM" class="logoUFMT">
+        <div class="painel-dados">
+            <div class="painel">
+                <h1>Painel de Chamadas HUJM-UFMT</h1>
+                <div class="chamada">
+                    <div class="campo">
+                        <span class="label">Nome do Paciente:</span>
+                        <span class="valor nome"></span>
+                    </div>
+                    <div class="campo">
+                        <span class="label">Senha:</span>
+                        <span class="valor senha"></span>
+                    </div>
+                    <div class="campo">
+                        <span class="label">Ambulatório:</span>
+                        <span class="valor ambulatorio"></span>
+                    </div>
+                    <div class="campo urgencia">
+                        <span class="label">Urgência:</span>
+                        <span class="valor urgencia"></span>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        const nome = localStorage.getItem('nome');
+        const senha = localStorage.getItem('senha');
+        const ambulatorio = localStorage.getItem('ambulatorio');
+        const urgencia = localStorage.getItem('urgencia');
+
+        document.querySelector('.valor.nome').innerText = nome;
+        document.querySelector('.valor.senha').innerText = senha;
+        document.querySelector('.valor.ambulatorio').innerText = ambulatorio;
+        document.querySelector('.valor.urgencia').innerText = urgencia;
+
+    </script>
+</body>
+</html>

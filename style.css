@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #aaf0e5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dados {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.logoHUJM {
+    position: absolute;
+    top: 20px;
+    right: -100px;
+    width: 200px;
+    height: auto;
+}
+
+.logoUFMT {
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    width: 200px;
+    height: auto;
+}
+
+.painel-dados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.painel {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 800px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.painel:hover {
+    transform: translateY(-5px);
+}
+
+.painel h1 {
+    font-size: 55px;
+    color: #EF3E36;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.chamada {
+    border-top: 1px solid #e0e4e8;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    font-size: 25px;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.valor {
+    font-size: 45px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+.urgencia .valor {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.valor, .label {
+    transition: color 0.3s ease;
+}
+
+.painel:hover .label {
+    color: #2980b9;
+}
+
+.painel:hover .valor {
+    color: #2c3e50;
+}

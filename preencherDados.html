@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Paciente</title>
+    <link rel="stylesheet" href="styleDados.css">
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <h1>Insira os Dados do Paciente</h1>
+            <form id="dadosPaciente">
+                <div class="dados">
+                    <label for="nome">Nome do Paciente</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="dados">
+                    <label for="senha">Insira a Senha</label>
+                    <input type="text" id="senha" name="senha" required>
+                </div>
+                <div class="dados">
+                    <label for="ambulatorio">Infome o Ambulatório</label>
+                    <input type="text" id="ambulatorio" name="ambulatorio" required>
+                </div>
+                <div class="dados">
+                        <label for="urgencia">Urgêngia</label>
+                        <select name="urgencia" id="urgencia" required>
+                            <option value="Baixa">Baixa</option>
+                            <option value="Média">Média</option>
+                            <option value="Alta">Alta</option>
+                        </select>
+                </div>
+                <button type="submit">Enviar Dados</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
